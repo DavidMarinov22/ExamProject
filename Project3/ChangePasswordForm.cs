@@ -30,9 +30,11 @@ namespace Project3
                 SqlCommand command = new SqlCommand(sqlStatement, connection);
 
 
-                SqlDataReader reader1 = command.ExecuteReader();
-
+                SqlDataReader reader = command.ExecuteReader();
+                
                 MessageBox.Show("You have succesfully changed your password!");
+                
+
             }
         }
 

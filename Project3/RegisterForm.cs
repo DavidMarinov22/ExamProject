@@ -25,14 +25,21 @@ namespace Project3
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                connection.Open();
+                try
+                {
+                    connection.Open();
 
-                SqlCommand command = new SqlCommand(sqlStatement, connection);
+                    SqlCommand command = new SqlCommand(sqlStatement, connection);
 
+                    SqlDataReader reader = command.ExecuteReader();
+                    MessageBox.Show("You have succesfully registered");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("This username is unavailable");
+                }
 
-                SqlDataReader reader = command.ExecuteReader();
             }
-            MessageBox.Show("You have succesfully registered");
         }
 
         private void button2_Click(object sender, EventArgs e)
