@@ -8,7 +8,6 @@ D:\INSTALL PROGRAMS\GitHubDesktop\ExamProjectq\Project3\bin\Debug\net5.0-windows
 D:\INSTALL PROGRAMS\GitHubDesktop\ExamProjectq\Project3\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\INSTALL PROGRAMS\GitHubDesktop\ExamProjectq\Project3\obj\Debug\net5.0-windows\Project3.csproj.AssemblyReference.cache
 D:\INSTALL PROGRAMS\GitHubDesktop\ExamProjectq\Project3\obj\Debug\net5.0-windows\Project3.ChangePasswordForm.resources
-D:\INSTALL PROGRAMS\GitHubDesktop\ExamProjectq\Project3\obj\Debug\net5.0-windows\Project3.DashboardForm.resources
 D:\INSTALL PROGRAMS\GitHubDesktop\ExamProjectq\Project3\obj\Debug\net5.0-windows\Project3.LoginForm.resources
 D:\INSTALL PROGRAMS\GitHubDesktop\ExamProjectq\Project3\obj\Debug\net5.0-windows\Project3.RegisterForm.resources
 D:\INSTALL PROGRAMS\GitHubDesktop\ExamProjectq\Project3\obj\Debug\net5.0-windows\Project3.csproj.GenerateResource.cache
@@ -26,3 +25,6 @@ D:\INSTALL PROGRAMS\GitHubDesktop\ExamProjectq\Project3\bin\Debug\net5.0-windows
 D:\INSTALL PROGRAMS\GitHubDesktop\ExamProjectq\Project3\bin\Debug\net5.0-windows\Project3.pdb
 D:\INSTALL PROGRAMS\GitHubDesktop\ExamProjectq\Project3\obj\Debug\net5.0-windows\Project3.genruntimeconfig.cache
 D:\INSTALL PROGRAMS\GitHubDesktop\ExamProjectq\Project3\obj\Debug\net5.0-windows\ref\Project3.dll
+D:\INSTALL PROGRAMS\GitHubDesktop\ExamProjectq\Project3\obj\Debug\net5.0-windows\Project3.AddStudentForm.resources
+D:\INSTALL PROGRAMS\GitHubDesktop\ExamProjectq\Project3\obj\Debug\net5.0-windows\Project3.MainForm.resources
+D:\INSTALL PROGRAMS\GitHubDesktop\ExamProjectq\Project3\obj\Debug\net5.0-windows\Project3.Properties.Resources.resources
