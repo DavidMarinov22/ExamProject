@@ -21,7 +21,7 @@ namespace Project3
         private void button1_Click(object sender, EventArgs e)
         { 
             string pattForInstallationDB = Application.UserAppDataPath.ToString();
-            string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename= " + pattForInstallationDB + @"\Database.mdf;";
+            string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename=" + pattForInstallationDB + @"\Database.mdf;";
             string sqlStatementForUsernameAndPassword = @"SELECT * FROM dbo.Users WHERE USERNAME='" + loginUsername.Text.Trim() + "' AND PASSWORD='" + loginPassword.Text + "'";
             string sqlStatementForUsername = @"SELECT * FROM dbo.Users WHERE USERNAME='" + loginUsername.Text.Trim() + "'";
 
@@ -29,12 +29,12 @@ namespace Project3
             {
                 connection.Open();
 
-                SqlCommand commandUsernameAndPassword = new SqlCommand(sqlStatementForUsernameAndPassword, connection);
-                SqlCommand commandUsername = new SqlCommand(sqlStatementForUsername, connection);
+                SqlCommand command = new SqlCommand(sqlStatementForUsernameAndPassword, connection);
+                
 
 
-                SqlDataReader reader1 = commandUsernameAndPassword.ExecuteReader();
-                if (reader1.HasRows)
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
                 {
                     MainForm dashboardForm = new MainForm();
                     dashboardForm.Show();
@@ -43,8 +43,9 @@ namespace Project3
                 }
                 connection.Close();
                 connection.Open();
-                reader1 = commandUsername.ExecuteReader();
-                if (reader1.HasRows)
+                command = new SqlCommand(sqlStatementForUsername, connection);
+                reader = command.ExecuteReader();
+                if (reader.HasRows)
                 {
                     MessageBox.Show("Incorrect password!");
                 }

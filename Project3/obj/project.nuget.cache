@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xJo9GgyOw0ZOxXsm8tiwEX06DkN/o/Xm03JNnG454h1mTbCXSN8gaMT8YIRdevtS4jffbn0kALPTfzbICAKfHg==",
+  "dgSpecHash": "MMOjlbjFP+STWJYzMQwT2vNunxxT12ovKLA6uxcJNCbvFuV04CiX3U9p4Vg7h7mhc9fzVh3hoOd6hUtDBsrprA==",
   "success": true,
-  "projectFilePath": "D:\\INSTALL PROGRAMS\\GitHubDesktop\\ExamProjectq\\Project3\\Project3.csproj",
+  "projectFilePath": "D:\\INSTALL PROGRAMS\\GitHubDesktop\\ExamProject\\Project3\\Project3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rex20\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\rex20\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

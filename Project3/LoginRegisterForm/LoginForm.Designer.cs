@@ -139,7 +139,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(156, 17);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Don\'t have an account ?";
+            this.label4.Text = "Don't have an account ?";
             // 
             // LoginForm
             // 

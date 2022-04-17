@@ -13,7 +13,6 @@ namespace Project3
 {
     public partial class MainForm : Form
     {
-        private string CurrentUserEGN = "";
         public MainForm()
         {
             InitializeComponent();
@@ -23,7 +22,7 @@ namespace Project3
         {
             comboBoxSearch.Items.Clear();
             string pattForInstallationDB = Application.UserAppDataPath.ToString();
-            string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename= " + pattForInstallationDB + @"\Database.mdf;";
+            string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename=" + pattForInstallationDB + @"\Database.mdf;";
             string sqlStatement = "SELECT * FROM dbo.Students WHERE FIRST_NAME= '" + comboBoxSearch.Text.Trim() + "'";
             
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -54,7 +53,7 @@ namespace Project3
         {
             var currentUser = comboBoxSearch.Text.Split(" ");
             string pattForInstallationDB = Application.UserAppDataPath.ToString();
-            string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename= " + pattForInstallationDB + @"\Database.mdf;";
+            string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename=" + pattForInstallationDB + @"\Database.mdf;";
             string sqlStatement = "DELETE FROM dbo.Students WHERE Id='" + currentUser[0] + "'";
 
             using (SqlConnection connection = new SqlConnection(connectionString))

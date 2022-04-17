@@ -22,7 +22,7 @@ namespace Project3
         private void button3_Click(object sender, EventArgs e)
         {
             string pattForInstallationDB = Application.UserAppDataPath.ToString();
-            string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename= " + pattForInstallationDB + @"\Database.mdf;";
+            string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename=" + pattForInstallationDB + @"\Database.mdf;";
             string sqlStatement = @"UPDATE dbo.Users SET PASSWORD = '" + txtConfirmPassword.Text + "' WHERE USERNAME = '" + Username + "'";
             string sqlStatementFind = @"SELECT * FROM dbo.Users WHERE USERNAME='" + Username + "'";
 

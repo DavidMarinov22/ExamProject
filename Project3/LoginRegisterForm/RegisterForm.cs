@@ -21,7 +21,7 @@ namespace Project3
         private void button1_Click(object sender, EventArgs e)
         {
             string pattForInstallationDB = Application.UserAppDataPath.ToString();
-            string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename= " + pattForInstallationDB + @"\Database.mdf;";
+            string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename=" + pattForInstallationDB + @"\Database.mdf;";
             string sqlStatement = "INSERT INTO dbo.Users(USERNAME, PASSWORD) VALUES('" + registerUsername.Text.Trim() + "', '" + registerPassword.Text + "')";
 
             using (SqlConnection connection = new SqlConnection(connectionString))

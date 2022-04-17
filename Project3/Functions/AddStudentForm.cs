@@ -28,7 +28,7 @@ namespace Project3
             try
             {
                 string pattForInstallationDB = Application.UserAppDataPath.ToString();
-                string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename= " + pattForInstallationDB + @"\Database.mdf;";
+                string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename=" + pattForInstallationDB + @"\Database.mdf;";
                 string sqlStatement = "INSERT INTO dbo.STUDENTS(FIRST_NAME, SURENAME, LAST_NAME, EGN_PIN, GRADE, NUMBER_CLASS, STATUS, SCHOOL_YEAR, DATE_YEAR, CHANGE_TIME) VALUES('" + txtFIrstName.Text.Trim() + "', '" + txtSurename.Text.Trim() + "', '" + txtLastName.Text.Trim() + "', '" + txtEGN.Text.Trim() + "', '" + Convert.ToInt32(comboBoxGrade.Text) + "', '" + Convert.ToInt32(txtClassNum.Text) + "', '" + comboBoxStatus.Text.Trim() + "', '" + comboBoxYear.Text.Trim() + "', '" + yearAndDate.Text + "', '" + CurrentDate + "')";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
